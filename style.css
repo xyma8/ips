@@ -1,0 +1,194 @@
+
+@font-face {
+    font-family: font; /* Гарнитура шрифта */
+    src: url(fonts/font.ttf); /* Путь к файлу со шрифтом */
+}
+
+html{
+    --color1: rgb(43, 62, 228);
+    --color1dark: #373737;
+    --backgroundcolor: rgb(217, 233, 235);
+    --backgroundcolordark: rgb(46, 44, 44);
+    --colortext: #000;
+    --colortextdark: rgb(211, 226, 228);
+    --colorpanel: rgb(165, 190, 194);
+    --colorpaneldark: rgb(27, 29, 29);
+    background-color: var(--backgroundcolor);
+}
+
+
+.jarallax{
+    position: relative;
+    z-index: 0;
+    min-height: calc(100vh - 70px);
+    font-family: font;
+    background-image: url('img/backdark.svg');
+    /*background-attachment:unset;*/
+}
+
+
+.footer{
+    height:50px;
+}
+
+/*
+.container{
+    background-color: #333;
+    padding: 50px;
+}
+*/
+.navbar-brand{
+    border-style: solid;
+    font-size: 45px;
+
+}
+
+.nav-item{
+    margin-right: 5px;
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 23px;
+    color: white;
+    text-align: center;
+}
+
+
+.nav-item:hover{
+    transform: scale(1.1);
+    text-shadow: 0px 0px 1px #13f168;
+}
+
+.navbar{
+    background-color: var(--color1);
+}
+
+.changetheme{
+    cursor: pointer;
+}
+
+.h1{
+    
+    text-align: center;
+    color: var(--colortext);
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.h2{
+    text-align: center;
+    color: var(--colortext);
+}
+
+.h3{
+    color: var(--colortext);
+}
+
+.h4{
+    color: var(--colortext);
+}
+
+.product-thumb a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    padding: 15px;
+}
+
+.product-thumb img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.product-card{
+    transition: all .3s;
+    border-style:outset;
+    border-radius: 3%;
+}
+
+.product-card:hover{
+    transform: scale(1.023);
+}
+
+.product-card:hover{
+    box-shadow: 0 14px 30px -15px rgba(0,0,0,0.75);
+    transition: all .3s;
+}
+
+.product-details{
+    padding:10px;
+}
+
+.product-details h4 a{
+    display: block;
+    font-weight: 500;
+    height: 60px;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.product-bottom-details{
+    overflow: hidden;
+    border-top: 2px solid #eee;
+    padding-top: 10px;
+    font-size: 25px;
+}
+
+.product-price{
+    font-size: 21px;
+    font-weight: 600;
+    color: var(--colortext);
+}
+
+.tovarinfo a{
+    font-size: 23px;
+}
+.buy{
+    background-color: var(--color1);
+    color: var(--colortext);
+    font-size: 25px;
+    border-radius:15%;
+}
+
+.text-center{
+    background-color: var(--color1);
+    color:var(--colortext);
+}
+
+.row{
+    background-color: var(--colorpanel);
+    padding: 10px;
+    border-radius: 1%;
+    
+}
+.carousel{
+    display: block;
+    max-width: auto;/*поменять если чо на пиксели*/
+    max-height: auto;
+    border-style: solid;
+}
+.carousel-inner {
+    display: flex;
+    max-width: 100%;
+    max-height: 100%;
+    align-items: center;
+}
+
+.carousel-item img{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+
+}
+
+.gif{
+    position:absolute;
+    left: -9999px;
+}
+
+
+
+
+
+
+

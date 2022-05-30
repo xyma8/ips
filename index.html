@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="img/favicon.svg">
+	<link href="bootstrap.min.css" rel="stylesheet">
+	<link href="style.css" rel="stylesheet">
+	<title>IPS</title>
+</head>
+
+<body>
+	<div class="content jarallax">	
+		<nav class="navbar navbar-expand-sm navbar-dark">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#">IPS</a>
+
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+					aria-controls="navbarContent" aria-expanded="false">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				
+				<div class="collapse navbar-collapse" id="navbarContent">
+					
+					<ul class="navbar-nav me-auto mb-2">
+						<li class="nav-item">
+							<a href="" class="nav-link">Товары</a>
+						</li>
+
+						<li class="nav-item">
+							<a href="delivery.html" class="nav-link">Доставка</a>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div align="right"><span class="changetheme" onclick="changeTheme()"><img src="img/light.svg" width="35px" height="35px" id="imgtheme"></span></div>
+		
+		<p class="h1">Наш ассортимент</p>
+
+		<section class="main-content">
+			<br>
+			<div class="container">
+				<div class="row">
+					<p class="h2">Видеокарты</p>
+					<div class="col-lg-4 col-sm-6 mb-3">
+						<div class="product-card">
+							<div class="product-thumb"  onclick="setData(0)">
+								<a href="tovar.html"><img src= "img/card/2060card.png"></a>
+							</div>
+							<div class="product-details"  align="center">
+								<h4><a href="tovar.html"  onclick="setData(0)">Palit GeForce RTX 2060 Super</a></h4>
+
+								<div class="product-bottom-details d-flex justify-content-center">
+									<div class="product-price">
+										25000 ₽
+									</div>
+								</div>
+							</div>	
+						</div>
+					</div>
+					
+					<div class="col-lg-4 col-sm-6 mb-3">
+						<div class="product-card">
+							<div class="product-thumb" onclick="setData(1)">
+								<a href="tovar.html"><img src= "img/card/3060card.png"></a>
+							</div>
+							<div class="product-details" align="center">
+								<h4><a href="tovar.html" onclick="setData(1)">MSI GeForce RTX 3060</a></h4>
+
+								<div class="product-bottom-details d-flex justify-content-center">
+									<div class="product-price">
+										35000 ₽
+									</div>
+								</div>
+							</div>	
+						</div>
+					</div>
+					
+					<div class="col-lg-4 col-sm-6 mb-3">
+						<div class="product-card">
+							<div class="product-thumb" onclick="setData(2)">
+								<a href="tovar.html"><img src= "img/card/3080card.png"></a>
+							</div>
+							<div class="product-details" align="center">
+								<h4><a href="tovar.html" onclick="setData(2)">GIGABYTE GeForce RTX 3080Ti</a></h4>
+
+								<div class="product-bottom-details d-flex justify-content-center">
+									<div class="product-price">
+										60000 ₽
+									</div>
+								</div>
+							</div>	
+						</div>
+					</div> 
+				</div>
+
+				<br>
+				<div class="row">
+					<p class="h2">Смартфоны</p>
+					<div class="col-lg-4 col-sm-6 mb-3">
+						<div class="product-card">
+							<div class="product-thumb" onclick="setData(3)">
+								<a href="tovar.html"><img src= "img/phone1/1.png"></a>
+							</div>
+							<div class="product-details"  align="center">
+								<h4><a href="tovar.html" onclick="setData(3)">Xiaomi 11 Lite 5G</a></h4>
+
+								<div class="product-bottom-details d-flex justify-content-center">
+									<div class="product-price">
+										30000₽
+									</div>
+								</div>
+							</div>	
+						</div>
+					</div>
+					
+					<div class="col-lg-4 col-sm-6 mb-3">
+						<div class="product-card">
+							<div class="product-thumb" onclick="setData(4)">
+								<a href="tovar.html"><img src= "img/phone1/2.png"></a>
+							</div>
+							<div class="product-details" align="center">
+								<h4><a href="tovar.html" onclick="setData(4)">Honor 50 8/256Gb</a></h4>
+
+								<div class="product-bottom-details d-flex justify-content-center">
+									<div class="product-price">
+										40000₽
+									</div>
+								</div>
+							</div>	
+						</div>
+					</div>
+					
+					<div class="col-lg-4 col-sm-6 mb-3">
+						<div class="product-card">
+							<div class="product-thumb" onclick="setData(5)">
+								<a href="tovar.html"><img src= "img/phone1/3.png"></a>
+							</div>
+							<div class="product-details" align="center">
+								<h4><a href="tovar.html" onclick="setData(5)">Apple iPhone 13 Pro</a></h4>
+
+								<div class="product-bottom-details d-flex justify-content-center">
+									<div class="product-price">
+										110000₽
+									</div>
+								</div>
+							</div>	
+						</div>
+					</div> 
+				</div>
+			</div>
+		</section>
+
+	</div>
+
+	<footer class="text-center" >
+		<div class="text-center p-3">			
+			<div><a
+				href="https://vk.com/xymaa"
+				role="button"
+				><img src="img/vk.svg" width="45px" height="45px">
+			  </a>
+			  <a
+				href="https://t.me/xma9999"
+				role="button"
+				><img src="img/tg.svg" width="45px" height="45px"> 
+			  </a>
+			</div>
+		  © 2022  		  
+		</div>
+	</footer>
+
+	<script src="js/jarallax.min.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+
+<script>
+	checkTheme();
+</script>
+
+</html>
+

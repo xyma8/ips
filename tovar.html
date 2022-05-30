@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="img/favicon.svg">
+        <link href="bootstrap.min.css" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
+        <title>IPS - </title>
+    </head>
+
+<body>
+    <div class="content jarallax">
+        <nav class="navbar navbar-expand-sm navbar-dark">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#">IPS</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+					aria-controls="navbarContent" aria-expanded="false">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarContent">
+					
+					<ul class="navbar-nav me-auto mb-2">
+						<li class="nav-item">
+							<a href="index.html" class="nav-link">Товары</a>
+						</li>
+
+						<li class="nav-item">
+							<a href="delivery.html" class="nav-link">Доставка</a>
+						</li>
+
+						<li class="nav-item">
+							<span class="changetheme" onclick="changeTheme()"><img src="img/light.svg" width="35px" height="35px" id="imgtheme"></span>
+						</li>
+					</ul>
+					
+				</div>
+				
+			</div>
+		</nav>
+
+        <br>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6" mb-2>
+                    <div class="container my-carousel">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner" align="center">
+                          <div class="carousel-item active">
+                            <img src="img/2060/1.png" class="imgT">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/2060/2.png" class="imgT">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/2060/4.png" class="imgT">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/2060/4.png" class="imgT">
+                          </div>
+                        </div>
+                        <br>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Предыдущий</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Следующий</span>
+                        </button>
+                      </div>
+                      <button onclick="visibleGif()">3D</button>
+                    </div>
+                </div>
+
+                <div class="col-lg-6" mb-2>
+                  <div class="gif id="gi"><img src="img/2060/2060g.gif" class="freezeframe" id="gifimg"></div>
+                    <div class="tovarinfo" align="center">
+                        <div class="h2" id="name">Palit GeForce RTX 2060 Super</div><br>
+                        <div class="h4" id="ops">PCI-E 3.0, 8 ГБ GDDR6, 256 бит, 1470 МГц - 1650 МГц, DVI-D, DisplayPort, HDMI </div><a href="#more">Подробнее</a>
+                        <br><button class="buy">Купить</button>
+                    </div>
+                </div>
+            </div>
+
+            <br><br>
+            <div class="row">
+                <div class="h2">Характеристики</div>
+                <div class="col-lg-12" mb-2>
+                    <div class="har" align="left" id="more">
+                        <div class="h3">Тип: Видеокарта</div>
+                        <div class="h3">Модель: Palit GeForce RTX 2060 Super</div>
+                        <div class="h3">Микроархитектура: NVIDIA Turing</div>
+                        <div class="h3">Техпроцесс: 12 нм</div>
+                        <div class="h3">Объём видеопамяти: 8 гб</div>
+                        <div class="h3">Тип памяти: GDDR6</div>
+                        <div class="h3">Разрядность шины памяти: 256 бит</div>
+                        <div class="h3">Поддержка трассировки лучей: есть</div>
+                        <div class="h3">Максимальное разрешение: Ultra HD 8K (7680x4320)</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        </div>
+
+        <footer class="text-center" >
+          <div class="text-center p-3">			
+            <div><a
+              href="https://vk.com/xymaa"
+              role="button"
+              ><img src="img/vk.svg" width="45px" height="45px">
+              </a>
+              <a
+              href="https://t.me/xma9999"
+              role="button"
+              ><img src="img/tg.svg" width="45px" height="45px"> 
+              </a>
+            </div>
+            © 2022  		  
+          </div>
+        </footer>
+
+  <script src="js/jarallax.min.js"></script>
+  <script src="js/freezeframe.min.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+<script>
+    new Freezeframe();
+    checkTovar();
+    checkTheme();
+    var gifvis = true;
+    var gif = document.getElementsByClassName('gif');
+    var vis = false;
+    function visibleGif() {
+      if(vis==true) {
+        gif[0].style.display = "none";
+        vis = false;
+      }else{
+        if(gifvis) {
+          gif[0].style.left = "0px";
+          gif[0].style.position = "relative";
+          gifvis = false;
+        }
+        gif[0].style.display = "block";
+        vis = true;
+      }
+    }
+</script>
+
+</html>
